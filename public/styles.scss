@@ -1,0 +1,17 @@
+@use "./typography.scss" as t;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1920px) and (min-width: 1024px){
+  .header{
+    .headerNavigation{
+      .headerNavigationButton{
+
+      }
+    }
+  }
+}

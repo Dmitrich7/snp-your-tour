@@ -1,0 +1,85 @@
+@mixin H1{
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 109%;
+}
+
+@mixin H2{
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 59px;
+  line-height: 124%;
+}
+
+@mixin H3{
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 122%;
+}
+
+@mixin p-big{
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 122%;
+
+}
+
+@mixin p-normal{
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+
+}
+
+@mixin p-small{
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 142%;
+}
+
+@mixin mobile-h1{
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 112%;
+}
+
+@mixin mobile-h2{
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 112%;
+}
+
+@mixin mobile-h3{
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 120%;
+}
+
+@mixin mobile-p-big{
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 142%;
+}
+
+@mixin mobile-p-normal{
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 142%;
+}
+
+@mixin mobile-p-small{
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 142%;
+}
