@@ -9,23 +9,262 @@
     </head>
     <body>
         <div class="head">
+            <img src="./images/header-img.png" class="headerBackgroundImg">
             <header class="header">
-                <img class="headerLogo" src="./images/YourTour.png" alt="logo">
-                <div class="headerNavigation">
-                    <div class="headerNavigationButton">Туры</div>
-                    <div class="headerNavigationButton">Создать тур</div>
-                    <div class="headerNavigationButton">Отзывы</div>
-                    <div class="headerNavigationButton">Истории</div>
-                </div>
-                <div class="headerPhoneNumber">
-                    +7 999 999 99 99
+                <div class="navbarContainer">
+                    <img class="headerLogo" src="./images/YourTour.png" alt="logo">
+                    <div class="headerNavigation">
+                        <p class="headerNavigationButton">Туры</p>
+                        <p class="headerNavigationButton">Создать тур</p>
+                        <p class="headerNavigationButton">Отзывы</p>
+                        <p class="headerNavigationButton">Истории</p>
+                    </div>
+                    <div class="headerPhoneNumber">
+                        +7 999 999 99 99
+                    </div>
                 </div>
             </header>
             <div class="headTextContainer">
-                <div class="headText">Идеальные путешествия существуют</div>
-                <div class="headSubText">Идейные соображения высшего порядка, а также рамки и место обучения кадров</div>
-                <button>Найти тур</button>
+                <h1 class="headText">Идеальные путешествия существуют</h1>
+                <p class="headSubText">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+                <button class="headButton">Найти тур</button>
             </div>
         </div>
+        <div>
+            <h2>Выбери свой тур</h2>
+            <div>
+                <p>Популярные</p>
+                <p>Авторские</p>
+                <p>Походы</p>
+                <p>Сплавы</p>
+                <p>Велопрогулки</p>
+            </div>
+            <div>
+                <div>
+                    <img src="./images/card%20tour%20photo-1.png" alt="">
+                    <h3>Путешествие в горы</h3>
+                    <p>от 80 000 руб</p>
+                    <p>Подробнее</p>
+                </div>
+                <div>
+                    <img src="./images/card%20tour%20photo-2.png" alt="">
+                    <h3>Путешествие в горы</h3>
+                    <p>от 80 000 руб</p>
+                    <p>Подробнее</p>
+                </div>
+                <div>
+                    <img src="./images/card%20tour%20photo-3.png" alt="">
+                    <h3>Путешествие в горы</h3>
+                    <p>от 80 000 руб</p>
+                    <p>Подробнее</p>
+                </div>
+                <div>
+                    <img src="./images/card%20tour%20photo-4.png" alt="">
+                    <h3>Путешествие в горы</h3>
+                    <p>от 80 000 руб</p>
+                    <p>Подробнее</p>
+                </div>
+                <div>
+                    <img src="./images/card%20tour%20photo-5.png" alt="">
+                    <h3>Путешествие в горы</h3>
+                    <p>от 80 000 руб</p>
+                    <p>Подробнее</p>
+                </div>
+                <div>
+                    <img src="./images/card%20tour%20photo-6.png./images/travel%20photo-" alt="">
+                    <h3>Путешествие в горы</h3>
+                    <p>от 80 000 руб</p>
+                    <p>Подробнее</p>
+                </div>
+            </div>
+            <div>
+                <h2>Собери свой тур</h2>
+                <p>Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+                <form action="submit">
+                    <div>
+                        <label for="name">Имя</label>
+                        <input placeholder="Введите Ваше имя" type="text" id="name">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input placeholder="example@mail.com" type="text" id="email">
+                    </div>
+                    <div>
+                        <label for="date_from">Дата от</label>
+                        <input placeholder="Дата от" type="date" id="date_from">
+                    </div>
+                    <div>
+                        <label for="destination">Направление</label>
+                        <input placeholder="Куда хотите ехать" type="text" id="destination">
+                    </div>
+                    <div>
+                        <label for="phone_number">Телефон</label>
+                        <input placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" type="text" id="phone_number">
+                    </div>
+                    <div>
+                        <label for="date_to">Дата до</label>
+                        <input placeholder="ДД.ММ.ГГГГ" type="text" id="date_to">
+                    </div>
+                    <div>
+                        <label for="commentary">Комментарий</label>
+                        <input type="text" id="commentary">
+                    </div>
+                    <div>
+                        <label for="age">Вам есть 18 лет?</label>
+                        <div id="age">
+                            <input id="yes" type="radio">
+                            <label for="yes">Да</label>
+                            <input id="no" type="radio">
+                            <label for="no">Нет</label>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="radio" id="agreement">
+                        <label for="agreement"></label>
+                    </div>
+                    <div>
+                        <button class="findTour">Найти тур</button>
+                        <button class="clear">Сбросить</button>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <h1>Отзывы наших путешественников</h1>
+                <p>Идейные соображения высшего порядка,
+                    а также рамки и место обучения кадров</p>
+                <div>
+                    <div>
+                        <p>Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение модели развития.</p>
+                        <div>
+                            <h3>Мария</h3>
+                            <p>Тур: Вдали от дома </p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям.
+
+                            Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития.</p>
+                        <div>
+                            <h3>Павел</h3>
+                            <p>Тур: Путешествие в горы</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>Фотографии путешествий</h2>
+            <p>Идейные соображения высшего порядка,
+                а также рамки и место обучения кадров</p>
+            <div>
+                <img src="./images/travel%20photo-1.png" alt="">
+                <img src="./images/travel%20photo-2.png" alt="">
+                <img src="./images/travel%20photo-3.png" alt="">
+                <img src="./images/travel%20photo-4.png" alt="">
+                <img src="./images/travel%20photo-5.png" alt="">
+                <img src="./images/travel%20photo-6.png" alt="">
+                <img src="./images/travel%20photo-7.png" alt="">
+                <img src="./images/travel%20photo-8.png" alt="">
+                <img src="./images/travel%20photo-9.png" alt="">
+                <img src="./images/travel%20photo-10.png" alt="">
+                <img src="./images/travel%20photo-11.png" alt="">
+                <img src="./images/travel%20photo-12.png" alt="">
+                <img src="./images/travel%20photo-13.png" alt="">
+            </div>
+        </div>
+        <div>
+            <h2>Истории путешествий</h2>
+            <p>Идейные соображения высшего порядка,
+                а также рамки и место обучения кадров</p>
+            <div>
+                <div>
+                    <img src="" alt="">
+                    <h3>Автостопом в Стамбул</h3>
+                    <p>Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений: </p>
+                    <ul>
+                        <li>вкусная еда</li>
+                        <li>дешевый транспорт</li>
+                        <li>красивый город.</li>
+                    </ul>
+                    <div>
+                        <div>
+                            <p>Подробнее</p>
+                            <img src="" alt="">
+                        </div>
+                        <div>
+                            <p>telegram</p>
+                            <p>facebook</p>
+                            <p>YouTube</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <h3>Автостопом в Стамбул</h3>
+                    <p>Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</p>
+                    <ul>
+                        <li>вкусная еда</li>
+                        <li>дешевый транспорт</li>
+                        <li>красивый город.</li>
+                    </ul>
+                    <div>
+                        <div>
+                            <p>Подробнее</p>
+                            <img src="" alt="">
+                        </div>
+                        <div>
+                            <p>telegram</p>
+                            <p>facebook</p>
+                            <p>ВКонтакте</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <h3>Автостопом в Стамбул</h3>
+                    <p>Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</p>
+                    <ul>
+                        <li>вкусная еда</li>
+                        <li>дешевый транспорт</li>
+                        <li>красивый город.</li>
+                    </ul>
+                    <div>
+                        <div>
+                            <p>Подробнее</p>
+                            <img src="" alt="">
+                        </div>
+                        <div>
+                            <p>telegram</p>
+                            <p>facebook</p>
+                            <p>ВКонтакте</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="" alt="">
+            <div>
+              <h3>Пора в путешествие вместе с нами!</h3>
+              <p>Напиши на почту и узнай подробности на yourtour@gmail.com </p>
+            </div>
+        </div>
+        <footer>
+            <p>Наши социальные сети</p>
+            <div>
+                <div>
+                    <img src="" alt="">
+                    <p>telegram</p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <p>facebook</p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <p>vkontakte</p>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

@@ -6,11 +6,60 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 1920px) and (min-width: 1024px){
+.head{
+  .headerBackgroundImg{
+    position: absolute;
+    z-index: -1;
+  }
   .header{
-    .headerNavigation{
-      .headerNavigationButton{
+    display: flex;
+    height: 88px;
+    justify-content: center;
+    align-items: center;
+    .navbarContainer{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 61%;
+      .headerNavigation{
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        .headerNavigationButton{
+          @include t.p-normal;
+          color: white;
+        }
+      }
+    }
+    .headerLogo{
+      height: 33%;
+    }
+    .headerPhoneNumber{
+      @include t.p-normal;
+      color: white;
+    }
+  }
+  .headTextContainer{
 
+    .headText{
+
+    }
+    .headSubText{
+
+    }
+  }
+}
+
+@media (max-width: 1920px) and (min-width: 1024px){
+  .head{
+    .headerBackgroundImg{
+    }
+    .header{
+      .headerNavigation{
+
+        .headerNavigationButton{
+
+        }
       }
     }
   }
