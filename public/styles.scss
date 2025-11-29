@@ -55,12 +55,13 @@
       @include t.H1;
       color: white;
       text-align: center;
+      margin-bottom: 50px;
     }
     .headSubText{
       @include t.p-normal;
       color: white;
       text-align: center;
-
+      margin-bottom: 50px;
     }
     .headButton{
       @include t.p-small;
