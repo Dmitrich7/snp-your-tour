@@ -48,13 +48,7 @@
   font-weight: 700;
   font-size: 34px;
   line-height: 112%;
-}
-
-@mixin mobile-h2{
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
-  font-size: 34px;
-  line-height: 112%;
+  letter-spacing: 1px;
 }
 
 @mixin mobile-h3{
@@ -73,9 +67,10 @@
 
 @mixin mobile-p-normal{
   font-family: Roboto, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
   line-height: 142%;
+
 }
 
 @mixin mobile-p-small{
@@ -83,19 +78,21 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 142%;
+  letter-spacing: -1;
 }
 
 h1{@include H1;}
 h2{@include H2;}
 h3{@include H3;}
 
-.p-big{ @include p-big; }
-.p-normal{ @include p-normal; }
-.p-small{ @include p-small; }
+@media (min-width: 1024px){
+  .p-big{ @include p-big; }
+  .p-normal{ @include p-normal; }
+  .p-small{ @include p-small; }
+}
 
-@media (min-width: 360px) and (max-width: 1024px) {
+@media (max-width: 1024px){
   h1 { @include mobile-h1; }
-  h2 { @include mobile-h2; }
   h3 { @include mobile-h3; }
 
   .p-big { @include mobile-p-big; }
