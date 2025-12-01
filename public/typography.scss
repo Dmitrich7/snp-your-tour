@@ -33,7 +33,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 142%;
-
+  letter-spacing: 0;
 }
 
 @mixin p-small{
@@ -83,4 +83,22 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 142%;
+}
+
+h1{@include H1;}
+h2{@include H2;}
+h3{@include H3;}
+
+.p-big{ @include p-big; }
+.p-normal{ @include p-normal; }
+.p-small{ @include p-small; }
+
+@media (min-width: 360px) and (max-width: 1024px) {
+  h1 { @include mobile-h1; }
+  h2 { @include mobile-h2; }
+  h3 { @include mobile-h3; }
+
+  .p-big { @include mobile-p-big; }
+  .p-normal { @include mobile-p-normal; }
+  .p-small { @include mobile-p-small; }
 }
