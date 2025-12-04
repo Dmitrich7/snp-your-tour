@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  display: grid;
+  gap: 135px;
+}
 .head{
   display: flex;
   flex-direction: column;
@@ -71,6 +75,53 @@
       border: 0;
       text-align: center;
     }
+  }
+}
+
+.contentContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 135px;
+  .tourCardsBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 160vh;
+    .tourCardHeader{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 100px;
+      .tourCardTitle{
+        margin-bottom: 35px;
+      }
+      .tourCardNavbarContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 700px;
+      }
+    }
+    .tourCardsContainer{
+      display: grid;
+      gap: 30px;
+      grid-template-columns: 1fr 1fr 1fr;
+      height: 100%;
+      .tourCard{
+
+      }
+      #tourCard1{ background: url("./images/card tour photo-1.png") }
+      #tourCard2{ background: url("./images/card tour photo-2.png") }
+      #tourCard3{ background: url("./images/card tour photo-3.png") }
+      #tourCard4{ background: url("./images/card tour photo-4.png") }
+      #tourCard5{ background: url("./images/card tour photo-5.png") }
+      #tourCard6{ background: url("./images/card tour photo-6.png") }
+    }
+
   }
 }
 

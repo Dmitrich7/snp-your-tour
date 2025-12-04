@@ -81,21 +81,22 @@
   letter-spacing: -1;
 }
 
-h1{@include H1;}
-h2{@include H2;}
-h3{@include H3;}
+.typography_h1{@include H1;}
+.typography_h2{@include H2;}
+.typography_h3{@include H3;}
 
 @media (min-width: 1024px){
-  .p-big{ @include p-big; }
-  .p-normal{ @include p-normal; }
-  .p-small{ @include p-small; }
+  .typography_p-big{ @include p-big; }
+  .typography_p-normal{ @include p-normal; }
+  .typography_p-small{ @include p-small; }
 }
 
 @media (max-width: 1024px){
-  h1 { @include mobile-h1; }
-  h3 { @include mobile-h3; }
+  .typography_h1 { @include mobile-h1; }
+  .typography_h2 { @include mobile-h1; }
+  .typography_h3 { @include mobile-h3; }
 
-  .p-big { @include mobile-p-big; }
-  .p-normal { @include mobile-p-normal; }
-  .p-small { @include mobile-p-small; }
+  .typography_p-big { @include mobile-p-big; }
+  .typography_p-normal { @include mobile-p-normal; }
+  .typography_p-small { @include mobile-p-small; }
 }
