@@ -1,4 +1,2 @@
-import "../public/styles.scss"
-import "../public/colors.scss"
-import "../public/typography.scss"
-
+import "../styles/colors.scss"
+import "../styles/typography.scss"

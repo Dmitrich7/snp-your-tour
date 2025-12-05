@@ -19,7 +19,7 @@
                         <p class="navigation__link typography_p-normal">Отзывы</p>
                         <p class="navigation__link typography_p-normal">Истории</p>
                     </div>
-                    <p class="menu__phone-number typography_p-normal">
+                    <p class="header__phone-number typography_p-normal">
                         +7 999 999 99 99
                     </p>
                 </div>
@@ -44,7 +44,7 @@
                         <p class="navigation__link typography_p-big">Велопрогулки</p>
                     </div>
                 </div>
-                <div class="tour-cards">
+                <div class="tour-card-list">
                     <div class="tour-card">
                         <h3 class="tour-card__title typography_h3">Путешествие в горы</h3>
                         <p class="tour-card__price">от 80 000 руб</p>
@@ -80,7 +80,7 @@
             <div class="content-box">
                 <h2 class="title typography_h2">Собери свой тур</h2>
                 <p class="typography_p-normal typography_p-normal_dim">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
-                <form class="form" action="submit">
+                <form class="form">
                     <div class="form__field">
                         <label class="label typography_p-normal" for="name">Имя</label>
                         <input class="input typography_p-normal" placeholder="Введите Ваше имя" type="text" id="name">
@@ -119,8 +119,8 @@
                         </div>
                     </div>
                     <div class="form__field">
-                        <input type="radio" id="agreement">
-                        <label for="agreement">
+                        <input class="input" type="radio" id="agreement">
+                        <label class="label" for="agreement">
                             Нажимая кнопку, я принимаю условия <span>Лицензионного договора</span>
                         </label>
                     </div>
@@ -132,7 +132,7 @@
             </div>
             <div class="content-box">
                 <h1 class="title typography_h2">Отзывы наших путешественников</h1>
-                <p class="typography_p-normal typography_p-normal_dim">Идейные соображения высшего порядка,
+                <p class="typography_p-normal typography_dim">Идейные соображения высшего порядка,
                     а также рамки и место обучения кадров
                 </p>
                 <div class="review-list">
@@ -141,23 +141,23 @@
                         <div class="user-info">
                             <h3 class="user-info__name typography_h3">Мария</h3>
                             <p class="user-info__tour typography_p-small">Тур: Вдали от дома </p>
-                            <img class="user__profile-picture" src="" alt="">
+                            <img class="user-info__profile-picture" src="" alt="">
                         </div>
                     </div>
                     <div class="review">
                         <p class="typography_p-big">Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям.</p>
                         <p class="typography_p-big">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития.</p>
                         <div class="user-info">
-                            <h3 class="user__name">Павел</h3>
+                            <h3 class="user-info__name">Павел</h3>
                             <p class="user-info__tour"> Тур: Путешествие в горы</p>
-                            <img class="user__profile-picture" src="" alt="">
+                            <img class="user-info__profile-picture" src="" alt="">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="content-box content-box_large">
                 <h2 class="title typography_h2">Фотографии путешествий</h2>
-                <p class="typography_p-normal typography_p-normal_dim">Идейные соображения высшего порядка,
+                <p class="typography_p-normal typography_dim">Идейные соображения высшего порядка,
                     а также рамки и место обучения кадров</p>
                 <div class="travel-gallery">
                     <img class="travel-gallery__photo" src="./images/travel%20photo-1.png" alt="">
@@ -177,17 +177,17 @@
             </div>
             <div class="content-box">
                 <h2 class="title typography_h2">Истории путешествий</h2>
-                <p class="typography_p-normal typography_p-normal_dim">Идейные соображения высшего порядка,
+                <p class="typography_p-normal typography_dim">Идейные соображения высшего порядка,
                     а также рамки и место обучения кадров
                 </p>
                 <div class="travel-history">
                     <div class="history-card">
-                        <h3 class="typography_h3">Автостопом в Стамбул</h3>
-                        <p class="typography_p-normal">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</p>
+                        <h3 class="history-card__title typography_h3">Автостопом в Стамбул</h3>
+                        <p class="history-card__description typography_p-normal">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</p>
                         <ul class="history-card__bullet-points">
-                            <li class="typography_p-normal">вкусная еда</li>
-                            <li class="typography_p-normal">дешевый транспорт</li>
-                            <li class="typography_p-normal">красивый город.</li>
+                            <li class="history-card__bullet typography_p-normal">вкусная еда</li>
+                            <li class="history-card__bullet typography_p-normal">дешевый транспорт</li>
+                            <li class="history-card__bullet typography_p-normal">красивый город.</li>
                         </ul>
                         <div class="history-card__footer">
                             <div class="learn-more-button">
@@ -211,13 +211,10 @@
                         </div>
                     </div>
                     <div class="history-card">
-                        <h3 class="typography_h3">Автостопом в Стамбул</h3>
-                        <p class="typography_p-normal">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</p>
-                        <ul class="history-card__bullet-points">
-                            <li class="typography_p-normal">вкусная еда</li>
-                            <li class="typography_p-normal">дешевый транспорт</li>
-                            <li class="typography_p-normal">красивый город.</li>
-                        </ul>
+                        <h3 class="history-card__title typography_h3">Автостопом в Стамбул</h3>
+                        <p class="history-card__description typography_p-normal">
+                            Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.
+                        </p>
                         <div class="history-card__footer">
                             <div class="learn-more-button">
                                 <p class="learn-more-button__text typography_p-big">Подробнее</p>
@@ -240,13 +237,10 @@
                         </div>
                     </div>
                     <div class="history-card">
-                        <h3 class="typography_h3">Автостопом в Стамбул</h3>
-                        <p class="typography_p-normal">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</p>
-                        <ul class="history-card__bullet-points">
-                            <li class="typography_p-normal">вкусная еда</li>
-                            <li class="typography_p-normal">дешевый транспорт</li>
-                            <li class="typography_p-normal">красивый город.</li>
-                        </ul>
+                        <h3 class="history-card__title typography_h3">Автостопом в Стамбул</h3>
+                        <p class="history-card__description typography_p-normal">
+                            Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.
+                        </p>
                         <div class="history-card__footer">
                             <div class="learn-more-button">
                                 <p class="learn-more-button__text typography_p-big">Подробнее</p>
@@ -254,12 +248,15 @@
                             </div>
                             <div class="socials">
                                 <p class="socials__link typography_p-normal">
+                                    <svg class="socials__icon"></svg>
                                     telegram
                                 </p>
                                 <p class="socials__link typography_p-normal">
+                                    <svg class="socials__icon"></svg>
                                     facebook
                                 </p>
                                 <p class="socials__link typography_p-normal">
+                                    <svg class="socials__icon"></svg>
                                     ВКонтакте
                                 </p>
                             </div>
@@ -281,7 +278,7 @@
             </div>
         </div>
         <footer class="footer">
-            <p class="typography_p-normal typography_p-normal_dim">Наши социальные сети</p>
+            <p class="typography_p-normal typography_dim">Наши социальные сети</p>
             <div class="socials">
                 <p class="socials__link socials__link_dark typography_p-normal">
                     <svg class="socials__icon"></svg>
