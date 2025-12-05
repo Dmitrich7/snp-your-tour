@@ -25,7 +25,6 @@
   font-weight: 700;
   font-size: 23px;
   line-height: 122%;
-
 }
 
 @mixin p-normal{
@@ -92,11 +91,7 @@
 }
 
 @media (max-width: 1024px){
-  .typography_h1 { @include mobile-h1; }
-  .typography_h2 { @include mobile-h1; }
-  .typography_h3 { @include mobile-h3; }
-
-  .typography_p-big { @include mobile-p-big; }
-  .typography_p-normal { @include mobile-p-normal; }
-  .typography_p-small { @include mobile-p-small; }
+  .typography_p-big{ @include mobile-p-big; }
+  .typography_p-normal{ @include mobile-p-big; }
+  .typography_p-small{ @include mobile-p-small; }
 }
