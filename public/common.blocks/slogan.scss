@@ -1,0 +1,16 @@
+.slogan{
+  width: 30%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  &__text{
+    color: white;
+    text-align: center;
+  }
+  &__sub-text{
+    color: white;
+    text-align: center;
+  }
+}

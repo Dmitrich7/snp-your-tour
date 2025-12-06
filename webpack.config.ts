@@ -32,7 +32,7 @@ export default (env: IEnvVariables) => {
                         "css-loader",
                         // Compiles Sass to CSS
                         "sass-loader",
-                    ],
+                    ]
                 },
                 {
                     test: /\.tsx?$/,
@@ -49,9 +49,8 @@ export default (env: IEnvVariables) => {
             extensions: ['.tsx', '.ts', '.js'],
         },
         devServer: {
-            port: 3000,
+            port: 5000,
             open: true,
-
         }
     }
     return config

@@ -1,0 +1,7 @@
+.tour-card-list{
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100%;
+  width: 100%;
+}
