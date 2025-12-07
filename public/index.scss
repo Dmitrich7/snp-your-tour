@@ -10,7 +10,7 @@
 @use "./common.blocks/tour-card";
 @use "./common.blocks/history-card";
 @use "./common.blocks/review";
-@use "./common.blocks/form";
+@use "./common.blocks/form/form";
 @use "./common.blocks/tour-card-list";
 @use "./common.blocks/review-list";
 @use "./common.blocks/travel-history";
@@ -19,11 +19,17 @@
 @use "./common.blocks/user-info";
 @use "./common.blocks/tail";
 @use "./common.blocks/title";
+@use "./common.blocks/sub-title";
 @use "./common.blocks/logo";
+@use "./common.blocks/title-container";
+
 @use "./ui.blocks/button.scss";
 @use "./ui.blocks/input.scss";
 @use "./ui.blocks/label.scss";
 @use "./ui.blocks/learn-more-button";
 @use "./ui.blocks/radio.scss";
+@use "./ui.blocks/dropdown";
+
 @use "./typography.blocks/typography.scss";
 @use "./typography.blocks/_white.scss";
+@use "./typography.blocks/_dim.scss";

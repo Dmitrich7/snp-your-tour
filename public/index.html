@@ -120,8 +120,10 @@
                 </div>
             </div>
             <div class="content-box">
-                <h2 class="title typography_h2">Собери свой тур</h2>
-                <p class="typography_p-normal typography_p-normal_dim">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+                <div class="title-container">
+                    <h2 class="title typography_h2">Собери свой тур</h2>
+                    <p class="sub-title typography_p-normal typography_dim">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+                </div>
                 <form class="form">
                     <div class="form__field">
                         <label class="label typography_p-normal" for="name">Имя</label>
@@ -137,7 +139,9 @@
                     </div>
                     <div class="form__field">
                         <label class="label typography_p-normal" for="destination">Направление</label>
-                        <input class="input typography_p-normal" placeholder="Куда хотите ехать" type="text" id="destination">
+                        <select class="dropdown typography_p-normal" id="destination">
+                            <option value="Куда хотите ехать?"></option>
+                        </select>
                     </div>
                     <div class="form__field">
                         <label class="label typography_p-normal" for="phone_number">Телефон</label>
@@ -147,11 +151,11 @@
                         <label class="label typography_p-normal" for="date_to">Дата до</label>
                         <input class="input typography_p-normal" placeholder="ДД.ММ.ГГГГ" type="text" id="date_to">
                     </div>
-                    <div class="form__field">
+                    <div class="form__field form__field_span-2">
                         <label class="label typography_p-normal" for="commentary">Комментарий</label>
                         <textarea class="textarea typography_p-normal" id="commentary"></textarea>
                     </div>
-                    <div class="form__field">
+                    <div class="form__field form__field_span-2">
                         <label class="label" for="age">Вам есть 18 лет?</label>
                         <div class="form__radio-container" id="age">
                             <input class="radio radio_round" id="yes" type="radio">
@@ -160,13 +164,13 @@
                             <label class="label typography_p-normal" for="no">Нет</label>
                         </div>
                     </div>
-                    <div class="form__field">
+                    <div class="form__field form__field_span-2">
                         <input class="input" type="radio" id="agreement">
                         <label class="label" for="agreement">
                             Нажимая кнопку, я принимаю условия <span>Лицензионного договора</span>
                         </label>
                     </div>
-                    <div class="form__field">
+                    <div class="form__field form__field_span-2">
                         <button class="button button_dark">Найти тур</button>
                         <button class="button button_light">Сбросить</button>
                     </div>
