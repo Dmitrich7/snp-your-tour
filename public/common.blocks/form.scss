@@ -1,0 +1,28 @@
+.form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 33px;
+  width: 88%;
+  height: 85.8%;
+  &__field{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &_span-2{
+      grid-column: span 2;
+    }
+    &_flex-direction-row{
+      flex-direction: row;
+    }
+  }
+  &__input-container{
+    width: 100%;
+    height: 50%;
+  }
+  &__radio-container{
+
+  }
+}

@@ -1,0 +1,13 @@
+.checkbox{
+  width: 26px;
+  height: 26px;
+  appearance: none;
+  border: 2px solid #1B1F2B;
+  border-radius: 25%;
+  cursor: pointer;
+
+  &:checked{
+
+  }
+}
+

@@ -124,57 +124,73 @@
                     <h2 class="title typography_h2">Собери свой тур</h2>
                     <p class="sub-title typography_p-normal typography_dim">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
                 </div>
-                <form class="form">
-                    <div class="form__field">
-                        <label class="label typography_p-normal" for="name">Имя</label>
-                        <input class="input typography_p-normal" placeholder="Введите Ваше имя" type="text" id="name">
-                    </div>
-                    <div class="form__field">
-                        <label class="label typography_p-normal" for="email">Email</label>
-                        <input class="input typography_p-normal" placeholder="example@mail.com" type="text" id="email">
-                    </div>
-                    <div class="form__field">
-                        <label class="label typography_p-normal" for="date_from">Дата от</label>
-                        <input class="input typography_p-normal" placeholder="Дата от" type="date" id="date_from">
-                    </div>
-                    <div class="form__field">
-                        <label class="label typography_p-normal" for="destination">Направление</label>
-                        <select class="dropdown typography_p-normal" id="destination">
-                            <option value="Куда хотите ехать?"></option>
-                        </select>
-                    </div>
-                    <div class="form__field">
-                        <label class="label typography_p-normal" for="phone_number">Телефон</label>
-                        <input class="input typography_p-normal" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" type="text" id="phone_number">
-                    </div>
-                    <div class="form__field">
-                        <label class="label typography_p-normal" for="date_to">Дата до</label>
-                        <input class="input typography_p-normal" placeholder="ДД.ММ.ГГГГ" type="text" id="date_to">
-                    </div>
-                    <div class="form__field form__field_span-2">
-                        <label class="label typography_p-normal" for="commentary">Комментарий</label>
-                        <textarea class="textarea typography_p-normal" id="commentary"></textarea>
-                    </div>
-                    <div class="form__field form__field_span-2">
-                        <label class="label" for="age">Вам есть 18 лет?</label>
-                        <div class="form__radio-container" id="age">
-                            <input class="radio radio_round" id="yes" type="radio">
-                            <label class="label typography_p-normal" for="yes">Да</label>
-                            <input class="radio radio_round" id="no" type="radio">
-                            <label class="label typography_p-normal" for="no">Нет</label>
+                <div class="form-container">
+                    <form class="form">
+                        <div class="form__field">
+                            <label class="label typography_p-normal" for="name">Имя</label>
+                            <div class="form__input-container">
+                                <input class="input typography_p-normal" placeholder="Введите Ваше имя" type="text" id="name">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form__field form__field_span-2">
-                        <input class="input" type="radio" id="agreement">
-                        <label class="label" for="agreement">
-                            Нажимая кнопку, я принимаю условия <span>Лицензионного договора</span>
-                        </label>
-                    </div>
-                    <div class="form__field form__field_span-2">
-                        <button class="button button_dark">Найти тур</button>
-                        <button class="button button_light">Сбросить</button>
-                    </div>
-                </form>
+                        <div class="form__field">
+                            <label class="label typography_p-normal" for="destination">Направление</label>
+                            <div class="form__input-container">
+                                <select class="dropdown typography_p-normal" id="destination">
+                                    <option value="Куда хотите ехать?"></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form__field">
+                            <label class="label typography_p-normal" for="email">Email</label>
+                            <div class="form__input-container">
+                                <input class="input typography_p-normal" placeholder="example@mail.com" type="text" id="email">
+                            </div>
+                        </div>
+                        <div class="form__field">
+                            <label class="label typography_p-normal" for="phone_number">Телефон</label>
+                            <div class="form__input-container">
+                                <input class="input typography_p-normal" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" type="text" id="phone_number">
+                            </div>
+                        </div>
+                        <div class="form__field">
+                            <label class="label typography_p-normal" for="date_from">Дата от</label>
+                            <div class="form__input-container">
+                                <input class="input typography_p-normal" placeholder="Дата от" type="date" id="date_from">
+                            </div>
+                        </div>
+                        <div class="form__field">
+                            <label class="label typography_p-normal" for="date_to">Дата до</label>
+                            <div class="form__input-container">
+                                <input class="input typography_p-normal" placeholder="ДД.ММ.ГГГГ" type="text" id="date_to">
+                            </div>
+                        </div>
+                        <div class="form__field form__field_span-2">
+                            <label class="label typography_p-normal" for="commentary">Комментарий</label>
+                            <div class="form__input-container">
+                                <textarea class="textarea typography_p-normal" id="commentary"></textarea>
+                            </div>
+                        </div>
+                        <div class="form__field form__field_span-2">
+                            <label class="label" for="age">Вам есть 18 лет?</label>
+                            <div class="form__radio-container" id="age">
+                                <input class="radio radio_round" id="yes" type="radio">
+                                <label class="label typography_p-normal" for="yes">Да</label>
+                                <input class="radio radio_round" id="no" type="radio">
+                                <label class="label typography_p-normal" for="no">Нет</label>
+                            </div>
+                        </div>
+                        <div class="form__field form__field_span-2 form__field_flex-direction-row">
+                            <input class="checkbox" type="checkbox" id="agreement">
+                            <p class="typography_p-normal" for="agreement">
+                                Нажимая кнопку, я принимаю условия <span>Лицензионного договора</span>
+                            </p>
+                        </div>
+                        <div class="form__field form__field_span-2 form__field_flex-direction-row">
+                            <button class="button button_dark">Найти тур</button>
+                            <button class="button button_light">Сбросить</button>
+                        </div>
+                    </form>
+                </div>
             </div>
             <div class="content-box">
                 <h1 class="title typography_h2">Отзывы наших путешественников</h1>
