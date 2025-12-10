@@ -5,9 +5,12 @@
   border: 2px solid #1B1F2B;
   border-radius: 25%;
   cursor: pointer;
-
-  &:checked{
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:checked::after{
+    content: url("./icons/checkbox tick.svg");
+    font-size: 19px;
   }
 }
 

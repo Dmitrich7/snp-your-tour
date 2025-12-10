@@ -135,8 +135,10 @@
                         <div class="form__field">
                             <label class="label typography_p-normal" for="destination">Направление</label>
                             <div class="form__input-container">
-                                <select class="dropdown typography_p-normal" id="destination">
-                                    <option value="Куда хотите ехать?"></option>
+                                <select class="dropdown typography_p-normal typography_dim" id="destination">
+                                    <option class="dropdown__option typography_p-normal" disabled selected hidden>Куда хотите ехать?</option>
+                                    <option class="dropdown__option typography_p-normal">Option1</option>
+                                    <option class="dropdown__option typography_p-normal">Option2</option>
                                 </select>
                             </div>
                         </div>
@@ -155,13 +157,13 @@
                         <div class="form__field">
                             <label class="label typography_p-normal" for="date_from">Дата от</label>
                             <div class="form__input-container">
-                                <input class="input typography_p-normal" placeholder="Дата от" type="date" id="date_from">
+                                <input class="input typography_p-normal" placeholder="ДД.ММ.ГГГГ" type="date" id="date_from">
                             </div>
                         </div>
                         <div class="form__field">
                             <label class="label typography_p-normal" for="date_to">Дата до</label>
                             <div class="form__input-container">
-                                <input class="input typography_p-normal" placeholder="ДД.ММ.ГГГГ" type="text" id="date_to">
+                                <input class="input typography_p-normal" placeholder="ДД.ММ.ГГГГ" type="date" id="date_to">
                             </div>
                         </div>
                         <div class="form__field form__field_span-2">
