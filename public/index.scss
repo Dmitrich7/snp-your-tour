@@ -24,7 +24,9 @@
 @use "./common.blocks/logo";
 @use "./common.blocks/title-container";
 
-@use "./ui.blocks/button.scss";
+@use "./ui.blocks/button/button.scss";
+@use "./ui.blocks/button/_dark.scss";
+@use "./ui.blocks/button/_light.scss";
 @use "./ui.blocks/input.scss";
 @use "./ui.blocks/label.scss";
 @use "./ui.blocks/learn-more-button";

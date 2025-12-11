@@ -1,0 +1,6 @@
+.button{
+  &_dark{
+    background-color: var(--green-400);
+    color: white;
+  }
+}
