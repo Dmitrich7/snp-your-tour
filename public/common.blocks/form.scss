@@ -20,6 +20,9 @@
     height: 68px;
   }
   &__commentary-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     grid-column: span 2;
     height: 188px;
   }

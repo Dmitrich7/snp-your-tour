@@ -1,0 +1,13 @@
+.review{
+  background-color: var(--beige-200);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  border-radius: 50px;
+  font-size: 23px;
+  &__text-container{
+    display: grid;
+    gap: 1em;
+  }
+}

@@ -1,0 +1,22 @@
+.user-info{
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  margin-top: 70px;
+  &__info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__name{
+
+  }
+  &__tour{
+
+  }
+  &__profile-picture{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+  }
+}
