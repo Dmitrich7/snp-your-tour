@@ -4,12 +4,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 body{
   width: 100vw;
-  overflow-x: hidden;
+  overflow-x: clip;
+  background-color: var(--beige-100);
 }
 
 :root{

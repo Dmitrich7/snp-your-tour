@@ -1,0 +1,30 @@
+.travel-gallery{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  &__photo-row-4{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 301px;
+    width: 100%;
+  }
+  &__photo-row-5{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 301px;
+  }
+  &__photo {
+    min-width: 0;
+    border-radius: 50px;
+    object-position: center;
+  }
+}
