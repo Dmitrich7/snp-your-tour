@@ -1,0 +1,35 @@
+.history-card{
+  width: 100%;
+  height: 567px;
+  border-radius: 50px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  &__title{
+    margin-bottom: 37px;
+  }
+  &__description{
+    width: 55%;
+    margin-bottom: 26px;
+  }
+  &__bullet-points{
+    list-style-type: none;
+  }
+  &__bullet::before{
+    content: "•";
+    text-align: center;
+    padding-left: 0.5em;
+    padding-right: 0.6em;
+  }
+  &__footer{
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@for $i from 1 through 3 {
+  .history-card:nth-child(#{$i}) {
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url("./images/story photo-#{$i}.png");
+  }
+}
