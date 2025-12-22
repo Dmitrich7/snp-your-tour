@@ -1,10 +1,15 @@
 .socials{
-  display: inline-flex;
-  gap: 35px;
+  display: flex;
+  gap: 36px;
+  &__link-container{
+    display: flex;
+  }
   &__link{
-
+    display: flex;
   }
   &__icon{
-
+    width: 26px;
+    height: 26px;
+    color: var(--gray-300);
   }
 }
